@@ -9,13 +9,6 @@ both written in JavaScript.
 With FLOWViZ, you can integrate your own phylogenetic tools, by filling a
 contract where you specify the tool's access, rules and guidelines.
 
-The integrated tools can then be used to build your own customized workflows.
-
-![flowviz-whiteboard](/docs/pictures/flowviz-whiteboard.png)
-
-You can also customize each task inside the workflow.
-
-![flowviz-task-setup](/docs/pictures/individualTaskSetup.png)
 
 # Setup requirements
 
