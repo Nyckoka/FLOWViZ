@@ -1,18 +1,12 @@
 # FLOWViZ
 
-FLOWViZ is an integration framework that allows you to seamlessly
-integrate other phylogenetic tools and frameworks,
-while providing workflow scheduling and execution,
-through the Apache Airflow workflow system.
+FLOWViZ is a middleware for facilitating the integration of a state of the art data-centric workflow system, Apache Airflow, within web applications for phylogenetic analyses.
 
 It is composed by two components: an **HTTP Express server**
 and a **React client**,
 both written in JavaScript.
 
-**It is still a work under development!**
-If you find a bug, please report [here](https://github.com/mig07/FLOWViZ/issues)
-
-With this framework, you can integrate your own phylogenetic tools, by filling a
+With FLOWViZ, you can integrate your own phylogenetic tools, by filling a
 contract where you specify the tool's access, rules and guidelines.
 
 The integrated tools can then be used to build your own customized workflows.
@@ -209,10 +203,10 @@ Further documentation about the developed solution can be found in this reposito
 
 # Contacts
 
-Source code repository - [https://github.com/mig07/FLOWViZ](https://github.com/mig07/FLOWViZ)
 
 - Miguel Luís - A43504@alunos.isel.pt
 - Cátia Vaz - cvaz@cc.isel.ipl.pt
+- Alexandre Francisco - aplf@ist.utl.pt
 
 # Acknowledgements
 
@@ -222,4 +216,4 @@ This project was developed under the context of a [Lisbon School of Engineering 
 
 The following articles were also submitted under the context of this project:
 - [https://inforum.org.pt/sites/default/files/2022-09/Actas_INForum.pdf#page=224](https://inforum.org.pt/sites/default/files/2022-09/Actas_INForum.pdf#page=224), single-column format, submitted and publicly presented at the [INForum 2022 conference](https://inforum.org.pt/), which took place at the [Polytechnic Institute of Guarda (IPG)](http://politecnicoguarda.pt/);
-- [https://arxiv.org/abs/2211.15282](https://arxiv.org/abs/2211.15282), two-column format.
+
