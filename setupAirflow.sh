@@ -11,7 +11,7 @@ startDocker() {
 
 # Creates Airflow user and composes services.
 setupAirflow() {
-    cd airflow/ && echo -e "AIRFLOW_UID=$(id -u)" > .env && docker compose up
+    cd airflow/ && echo -e "AIRFLOW_UID=$(id -u)" > .env && docker compose up -d
 }
 
 startDocker

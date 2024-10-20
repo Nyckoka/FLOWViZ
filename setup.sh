@@ -28,10 +28,8 @@ setupDockerNetwork() {
     docker inspect -f '{{with index .NetworkSettings.Networks "flowviz-network-docker"}}{{.IPAddress}}{{end}}' mongodb
 }
 
-setupFlowviz() {
-    npm run setup
-
-    # Copying a default .env files, if user-defined .env files do not exist in server and client folders.
+# Copying default .env files, if user-defined .env files do not exist in server and client folders.
+copyDefaultEnvFiles() {
     if [ ! -f ./.env ]; then
         cp .defaults/server/.env .
     fi
@@ -39,6 +37,12 @@ setupFlowviz() {
     if [ ! -f ./client/.env ]; then
         cp .defaults/client/.env client/
     fi
+}
+
+setupFlowviz() {
+    copyDefaultEnvFiles
+
+    npm run setup # Installs the dependencies with npm install
 }
 
 startDocker
