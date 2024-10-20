@@ -21,7 +21,7 @@ cleanupNetwork() {
 # Cleans up node_modules and environment files
 cleanupFlowviz() {
     # rm -rf node_modules
-    rm -rf client/node_modules
+    # rm -rf client/node_modules
     rm -f .env
     rm -f client/.env
 }
